@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/layout.css">
+
+</head>
+<body>
+    <%-include("partials/header.ejs") %>
+    <div id="content">
+        <h2> <%= title %> </h2>
+        <p> <%= para %> </p>
+        <form action="/delete" method="post">
+            <p>Delete this post permanently </p>
+            <button type="submit" name="btn" value="<%= title%>">Delete</button>
+        </form>
+    </div>
+        
+    <%-include("partials/footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("partials/header.ejs") %>
+    
+    <div id="content">
+       <% myblogs.forEach(blog => { %>
+           <h2> <%= blog.title %> </h2>
+           <p style="display: inline;"> <%=(blog.para).substring(0,100) %>... </p>
+           <a href="/page/<%= blog.title %>">  Read more</a>
+       <% }) %>
+    </div>
+    
+    <%-include("partials/footer.ejs") %>
+</body>
+</html>

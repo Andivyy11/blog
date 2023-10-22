@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.head{
+    display: flex;
+    width: 100%;
+    padding:20px 20px 20px 60px;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.head ul{
+    list-style-type: none;
+    padding: 0;
+}
+.head li{
+    padding:10px;
+    display: inline;
+}
+li a{
+    text-decoration:none ;
+    color: white;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:sans-serif;
+            text-align: center;
+        }
+        textarea{
+            width:500px;
+            height:400px;
+            margin:20px;
+            resize: none;
+        }
+        button
+        {
+            padding:15px 20px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compose blog</h1>
+    <form action="/compose" method="post">
+        <label>Title</label>
+       <input type="text" name="title">
+       <br>
+       <textarea placeholder="Type your blog here..." name="para"></textarea>
+       <br>
+       <button type="submit">Done</button>
+    </form> 
+</body>
+</html>
